@@ -9,24 +9,25 @@
     <header>
       <ul>
         <li>
-          <button>
+          <button onclick="router.loadRoute('')">
             Home
           </button>
         </li>
         <li>
-          <button>
+          <button onclick="router.loadRoute('contacto')">
             Contacto
           </button>
         </li>
         <li>
-          <button>
+          <button onclick="router.loadRoute('aboutme')">
             About me
           </button>
         </li>
       </ul>
     </header>
-    <div>
-      <h1>Hola pequeño muggle</h1>
-    </div>
+    <div data-router></div>
+    <script src="./router.js"></script>
+    <script src="./routes.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
